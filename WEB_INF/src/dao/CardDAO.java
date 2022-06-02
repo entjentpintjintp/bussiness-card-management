@@ -58,7 +58,7 @@ public class CardDAO {
 			//card 객체에 더이상 검색되는 데이터가 없을 때까지 넣음.
 			while(rs.next()) {
 				//새로운 vo객체 생성
-				card = new CardBean;
+				card = new CardBean();
 				card.setEMP_NUM(rs.getInt("EMP_NUM"));
 				card.setNAME_KOR(rs.getString("NAME_KOR"));
 				card.setSOC_NUM(rs.getInt("SOC_NUM"));
